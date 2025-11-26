@@ -12,9 +12,15 @@
 //   }
 // }
 
+import 'dart:io';
 int add(int x, int y){ //function declaration
   return x + y;
 }
 void main(){
   print(add(5,3)); // calling function
+  print("welcome");
+  stdout.write(' Enter name ');
+  String? name = stdin.readLineSync();
+  print(name);
+
 }
