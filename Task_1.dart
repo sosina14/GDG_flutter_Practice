@@ -18,8 +18,10 @@ void main(){
   }
 // 3. Create a function that takes user name and age as
 // parameters. print user information.
-  
-  
+  printUserInfo("Sosina", 21);
+
+
+
 // Task 4 print the pattern
   for(int i = 0 ; i <= 5 ; i++){
     for(int j = 0 ; j <= i; ++j){
@@ -31,5 +33,9 @@ void main(){
 }
 
 
+  void printUserInfo(String name, int age) {
+  print("User Name: $name");
+  print("User Age: $age");
+}
 
 
