@@ -22,19 +22,39 @@ void main(){
 
 
 
-// Task 4 print the pattern
+// Task 4.1 print the pattern 
   for(int i = 0 ; i <= 5 ; i++){
     for(int j = 0 ; j <= i; ++j){
       stdout.write('*');
     }
     print('');
   }
+// Task 4.2 print the pattern 
+ for(int i = 5 ; i >= 1 ; i--){
+    for(int j = 1 ; j <= i; j++){
+      stdout.write('*');
+    }
+    print('');
+  }
+// Task 4.3 print the pattern 
+ int rows = 5;
+
+  for (int i = 1; i <= rows; i++) {
+
+    for (int j = 1; j <= rows - i; j++) {
+      stdout.write(' ');
+    }
+    for (int k = 1; k <= (2 * i - 1); k++) {
+      stdout.write('*');
+    }
+
+    print('');
+  }
+
 
 }
-
-
   void printUserInfo(String name, int age) {
-    
+
   print("User Name: $name");
   print("User Age: $age");
 }
